@@ -43,51 +43,52 @@
         </div>
     </header>
     
-    <div class="content">
-        <h1 class="logo"><span>Soporte</span></h1>
-        <div class="contact-wrapper animated bounceInUp">
-            <div class="contact-form">
-                <h3>Contactenos</h3>
-                <form action="">
-                    <p>
-                        <label>Nombres</label>
-                        <input type="text" name="fullname">
-                    </p>
-                    <p>
-                        <label>Apellidos</label>
-                        <input type="email" name="email">
-                    </p>
-                    <p>
-                        <label>Correo electronico</label>
-                        <input type="tel" name="phone">
-                    </p>
-                    <p>
-                        <label>Numero telefonico</label>
-                        <input type="text" name="affair">
-                    </p>
-                    <p class="block">
-                       <label>Consulta</label> 
-                        <textarea name="message" rows="3"></textarea>
-                    </p>
-                    <p class="block">
-                        <button>
-                            enviar
-                        </button>
-                    </p>
-                </form>
-            </div>
-            <div class="contact-info">
-                <h4>Mas info</h4>
-                <ul>
-                    <li><i class="fas fa-map-marker-alt"></i> Surco </li>
-                    <li><i class="fas fa-phone"></i> (51) 954 154 587 </li>
-                    <li><i class="fas fa-envelope-open-text"></i> gamerscave@gmail.com</li>
-                </ul>
-                <p></p>
-                <p>gamerscave.com</p>
-            </div>
-        </div>
+   <div class="content">
+  <h1 class="logo"><span>Soporte</span></h1>
+  <div class="contact-wrapper animated bounceInUp">
+    <div class="contact-form">
+      <h3>Contáctenos</h3>
+      <form id="form-contacto">
+        <p>
+          <label>Nombres</label>
+          <input type="text" name="nombres" required>
+        </p>
+        <p>
+          <label>Apellidos</label>
+          <input type="text" name="apellidos" required>
+        </p>
+        <p>
+          <label>Correo electrónico</label>
+          <input type="email" name="correo" required>
+        </p>
+        <p>
+          <label>Número telefónico</label>
+          <input type="tel" name="telefono" required>
+        </p>
+        <p class="block">
+          <label>Consulta</label> 
+          <textarea name="mensaje" rows="3" required></textarea>
+        </p>
+        <p class="block">
+          <button type="submit">
+            Enviar
+          </button>
+        </p>
+      </form>
     </div>
+    <div class="contact-info">
+      <h4>Más info</h4>
+      <ul>
+        <li><i class="fas fa-map-marker-alt"></i> Surco</li>
+        <li><i class="fas fa-phone"></i> (51) 954 154 587</li>
+        <li><i class="fas fa-envelope-open-text"></i> gamerscave@gmail.com</li>
+      </ul>
+      <p>gamerscave.com</p>
+    </div>
+  </div>
+</div>
+
+
 
 
     <footer class="section-p1">
@@ -141,6 +142,7 @@
         </div>
     </footer>
     <script src="js/home.js" type="module"></script>
+    <script src="js/contacto.js"></script>
 </body>
 
 </html>
