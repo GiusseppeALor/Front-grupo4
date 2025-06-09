@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Enviar al backend
     try {
-      const response = await fetch('http://localhost:3000/api/consultas', {
+      const response = await fetch('http://3.20.248.50:3000/api/consultas', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
