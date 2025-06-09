@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Work+Sans&display=swap');
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+.material-icons.md-18 {
+    font-size: 18px;
+}
+
+.go-home {
+    color: black;
+    font-size: 1.125rem;
+    font-weight: 600;
+    border: dashed 5px white;
+    padding: .5rem;
+    transition: all .4s ease;
+}
+
+.material-icons.md-dark {
+    color: white;
+}
+
+.go-home:hover {
+    background-color: white;
+}
+
+:root {
+    --bg: #fff;
+    --bg-card: #f2f2f2;
+    --bg-card-btn: #E0E0E0;
+    --bg-form-submit: #F2994A;
+    --color-title-item: #4E5150;
+    --contact-title: #333;
+    --labels-color: #4F4F4F;
+    --border-color-price: #bdbdbd;
+    --border-color-addItem: #828282;
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Roboto' sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.create-account,
+.create {
+    color: white;
+    font-size: 1.125rem;
+}
+
+.create:hover {
+    color: #e5f628;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    padding: 2rem 1rem;
+    background: linear-gradient(to right, #0F2027, #203A43, #2C5364);
+}
+
+main .logo {
+    position: absolute;
+    top: 1.5rem;
+    right: .5rem;
+}
+
+main section {
+    display: flex;
+    margin: 0 auto;
+    width: min(100%, 21.56rem);
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+main section .img {
+    flex: 1;
+    background-image: url("../img/cosmos_form.jpg");
+    background-size: cover;
+    border-radius: .25rem;
+}
+
+main section .form-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 2.5rem;
+}
+
+main section .form-container span {
+    text-align: center;
+    font-size: 16px;
+    color: #E0E0E0;
+}
+
+main section .form-container .btn-container {
+    display: flex;
+    gap: 2rem;
+}
+
+main section .form-container .btn-container button {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+main section .form-container .btn-container button i {
+    cursor: pointer;
+    font-size: 28px;
+}
+
+main section .form-container .btn-container button i.google {
+    color: rgb(251, 90, 61);
+}
+
+main section .form-container .btn-container button i.github {
+    color: white;
+}
+
+main section .form-container .btn-container button i.facebook {
+    color: rgb(7, 138, 245);
+}
+
+
+
+main section .form-container .form {
+    position: relative;
+}
+
+main section .form-container .form h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #f2f2f2;
+}
+
+main section .form-container .form ul {
+    list-style: none;
+}
+
+main section .form-container .form ul li label {
+    color: white;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+main section .form-container .form ul li+li {
+    margin-top: min(6vw, 1rem);
+}
+
+main section .form-container .form ul .inputs-container {
+    border: 2px solid white;
+    padding: .625rem .5rem;
+    border-radius: .75rem;
+    display: flex;
+    flex-direction: row;
+    gap: .65rem;
+    align-items: center;
+    position: relative;
+}
+
+main section .form-container .form ul .inputs-container.success {
+    border-color: #2ecc71;
+}
+
+main section .form-container .form ul .inputs-container.success i.fa-check-circle {
+    visibility: visible;
+    color: #2ecc71;
+}
+
+main section .form-container .form ul .inputs-container.error {
+    border-color: #e74c3c;
+}
+
+main section .form-container .form ul .inputs-container.error i.fa-exclamation-circle {
+    visibility: visible;
+    color: #e74c3c;
+}
+
+
+main section .form-container .form ul .inputs-container i {
+    position: absolute;
+    visibility: hidden;
+    right: 10px;
+}
+
+main section .form-container .form ul .inputs-container small {
+    position: absolute;
+    bottom: -1.25rem;
+    right: 0;
+    visibility: hidden;
+}
+
+main section .form-container .form ul .inputs-container.error small {
+    visibility: visible;
+    color: #e74c3c;
+}
+
+main section .form-container .form ul li input:not(input[type="checkbox"]) {
+    width: 100%;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: clamp(.75rem, 2.5vw, 1.25rem);
+    font-weight: 500;
+    background-color: transparent;
+}
+
+main section .form-container .form .sub-btn {
+    border: none;
+    outline: none;
+    width: 45%;
+    border-radius: 3px;
+    padding: .5rem 1rem;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 500;
+    background-color: #6c6a6a;
+    margin-top: 2rem;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+main section .form-container .form .sub-btn:hover {
+    background-color: #4F4F4F;
+}
+
+@media screen and (min-width: 48rem) {
+    .material-icons.md-32 {
+        font-size: 32px;
+    }
+
+    main {
+        height: 100vh;
+    }
+
+    main .logo {
+        top: 1.5rem;
+        right: 1.5rem;
+    }
+
+    main section {
+        flex-direction: row;
+        width: min(100%, 28rem);
+    }
+}

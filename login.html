@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/chekout.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="js/githubLogin.js" type="module"></script>
+    <script src="https://kit.fontawesome.com/bc7a912712.js" crossorigin="anonymous"></script>
+
+    <title>Login</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <article class="form-container">
+                <form class="form" action="#" id="login-form">
+                    <h2>Login</h2>
+                    <ul>
+                        <li>
+                            <label for="mail" class="form-lb">E-mail</label>
+                            <div class="inputs-container">
+                                <span class="material-icons md-18 md-dark">
+                                    email
+                                </span>
+                                <input type="email" id="login-mail" name="user_mail" placeholder="example@gmail.com"
+                                    autofocus>
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Error message</small>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="pass" class="form-lb">Contraseña</label>
+                            <div class="inputs-container">
+                                <span class="material-icons md-18 md-dark">
+                                    lock
+                                </span>
+                                <input type="password" id="login-pass" name="user_pass" placeholder="*************"
+                                    autofocus>
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Error message</small>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="create-account">Tienes una cuenta? <a href="signIn.html" class="create">crear
+                                    una</a></p>
+                        </li>
+                    </ul>
+                    <div class="btn-container">
+                        <button type="submit" class="sub-btn" id="submit_log">Continuar</button>
+                    </div>
+                </form>
+                <span>O logeate con </span>
+                <div class="btn-container">
+                    <button type="button" id="googleLogin">
+                        <i class="fab fa-google google"></i>
+                    </button>
+                    <button type="button" id="githubLogin">
+                        <i class="fab fa-github github"></i>
+                    </button>
+                </div>
+            </article>
+        </section>
+    </main>
+    <!-- <script src="js/conf.js" type="module"></script> -->
+    <script src="js/loginForm.js" type="module"></script>
+    <script src="js/googleLogin.js" type="module"></script>
+    <!-- <script src="js/main.js" type="module"></script> -->
+</body>
+
+</html>
